@@ -3148,7 +3148,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'active-drag-cell': this.isSelected() || this.isDraggedOver(),
 	      'is-dragged-over-up': this.isDraggedOverUpwards(),
 	      'is-dragged-over-down': this.isDraggedOverDownwards(),
-	      'was-dragged-over': this.wasDraggedOver()
+	      'was-dragged-over': this.wasDraggedOver(),
+	      'react-grid-Cell--editable': this.props.column.editable,
+	      'react-grid-Cell--disabled': this.props.column.disabled
 	    });
 	    return joinClasses(className, extraClasses);
 	  },
